@@ -11,8 +11,32 @@ class App extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.black,
-        body: Center(
-          child: Text('Hello world!'),
+        body: Column(
+          children: [
+            SizedBox(
+              height: 80,
+            ),
+            Row(
+              children: [
+                Column(
+                  children: [
+                    Text(
+                      'Hey, wakgood',
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                    Text(
+                      'Welcome back',
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
+                )
+              ],
+            )
+          ],
         ),
       ),
     );
