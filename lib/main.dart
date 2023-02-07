@@ -17,13 +17,17 @@ class App extends StatelessWidget {
               height: 80,
             ),
             Row(
+              mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     Text(
                       'Hey, wakgood',
                       style: TextStyle(
                         color: Colors.white,
+                        fontSize: 38,
+                        fontWeight: FontWeight.w600,
                       ),
                     ),
                     Text(
