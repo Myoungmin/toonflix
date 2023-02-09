@@ -16,10 +16,9 @@ class App extends StatelessWidget {
             horizontal: 40,
           ),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(
-                height: 80,
-              ),
+              SizedBox(),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
@@ -44,6 +43,14 @@ class App extends StatelessWidget {
                     ],
                   )
                 ],
+              ),
+              SizedBox(
+                height: 120,
+              ),
+              Text(
+                'Total Balance',
+                style: TextStyle(
+                    fontSize: 22, color: Colors.white.withOpacity(0.8)),
               )
             ],
           ),
