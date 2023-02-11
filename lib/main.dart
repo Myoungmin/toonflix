@@ -51,6 +51,30 @@ class App extends StatelessWidget {
                 'Total Balance',
                 style: TextStyle(
                     fontSize: 22, color: Colors.white.withOpacity(0.8)),
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              Text(
+                '\$1 000 000',
+                style: TextStyle(
+                  fontSize: 48,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white,
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Row(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.amber,
+                    ),
+                    child: Text('Transfer'),
+                  )
+                ],
               )
             ],
           ),
