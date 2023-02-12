@@ -72,7 +72,13 @@ class App extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: Colors.amber,
                     ),
-                    child: Text('Transfer'),
+                    child: Padding(
+                      padding: EdgeInsets.symmetric(
+                        vertical: 15,
+                        horizontal: 40,
+                      ),
+                      child: Text('Transfer'),
+                    ),
                   )
                 ],
               )
