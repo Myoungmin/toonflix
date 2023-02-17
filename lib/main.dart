@@ -71,13 +71,19 @@ class App extends StatelessWidget {
                   Container(
                     decoration: BoxDecoration(
                       color: Colors.amber,
+                      borderRadius: BorderRadius.circular(45),
                     ),
                     child: Padding(
                       padding: EdgeInsets.symmetric(
-                        vertical: 15,
-                        horizontal: 40,
+                        vertical: 20,
+                        horizontal: 50,
                       ),
-                      child: Text('Transfer'),
+                      child: Text(
+                        'Transfer',
+                        style: TextStyle(
+                          fontSize: 22,
+                        ),
+                      ),
                     ),
                   )
                 ],
