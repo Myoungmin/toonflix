@@ -6,26 +6,28 @@ void main() {
 }
 
 class App extends StatelessWidget {
+  const App({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Color(0xFF181818),
+        backgroundColor: const Color(0xFF181818),
         body: Padding(
-          padding: EdgeInsets.symmetric(
+          padding: const EdgeInsets.symmetric(
             horizontal: 40,
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              SizedBox(),
+              const SizedBox(),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: [
-                      Text(
+                      const Text(
                         'Hey, wakgood',
                         style: TextStyle(
                           color: Colors.white,
@@ -44,7 +46,7 @@ class App extends StatelessWidget {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 120,
               ),
               Text(
@@ -52,10 +54,10 @@ class App extends StatelessWidget {
                 style: TextStyle(
                     fontSize: 22, color: Colors.white.withOpacity(0.8)),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 5,
               ),
-              Text(
+              const Text(
                 '\$1 000 000',
                 style: TextStyle(
                   fontSize: 48,
@@ -63,8 +65,8 @@ class App extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-              SizedBox(
-                height: 20,
+              const SizedBox(
+                height: 30,
               ),
               Row(
                 children: [
@@ -73,7 +75,7 @@ class App extends StatelessWidget {
                       color: Colors.amber,
                       borderRadius: BorderRadius.circular(45),
                     ),
-                    child: Padding(
+                    child: const Padding(
                       padding: EdgeInsets.symmetric(
                         vertical: 20,
                         horizontal: 50,
@@ -81,7 +83,7 @@ class App extends StatelessWidget {
                       child: Text(
                         'Transfer',
                         style: TextStyle(
-                          fontSize: 22,
+                          fontSize: 20,
                         ),
                       ),
                     ),
