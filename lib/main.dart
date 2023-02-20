@@ -88,28 +88,39 @@ class App extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: const Color(0xFF1F2123),
-                      borderRadius: BorderRadius.circular(45),
-                    ),
-                    child: const Padding(
-                      padding: EdgeInsets.symmetric(
-                        vertical: 20,
-                        horizontal: 50,
-                      ),
-                      child: Text(
-                        'Request',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
-                        ),
-                      ),
-                    ),
-                  ),
+                  const MyButton(),
                 ],
               )
             ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class MyButton extends StatelessWidget {
+  const MyButton({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        color: const Color(0xFF1F2123),
+        borderRadius: BorderRadius.circular(45),
+      ),
+      child: const Padding(
+        padding: EdgeInsets.symmetric(
+          vertical: 20,
+          horizontal: 50,
+        ),
+        child: Text(
+          'Request',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 20,
           ),
         ),
       ),
