@@ -104,7 +104,30 @@ class App extends StatelessWidget {
                     ),
                   ),
                 ],
-              )
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              Container(
+                child: Row(
+                  children: [
+                    Column(
+                      children: [
+                        const Text('Euro'),
+                        const SizedBox(
+                          height: 10,
+                        ),
+                        Row(
+                          children: const [
+                            Text('6428'),
+                            Text('EUR'),
+                          ],
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              ),
             ],
           ),
         ),
