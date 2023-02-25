@@ -109,11 +109,18 @@ class App extends StatelessWidget {
                 height: 20,
               ),
               Container(
+                decoration: const BoxDecoration(
+                  color: Color(0xFF1F2123),
+                ),
                 child: Row(
                   children: [
                     Column(
                       children: [
-                        const Text('Euro'),
+                        const Text('Euro',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 32,
+                            )),
                         const SizedBox(
                           height: 10,
                         ),
