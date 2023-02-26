@@ -112,27 +112,33 @@ class App extends StatelessWidget {
                 decoration: const BoxDecoration(
                   color: Color(0xFF1F2123),
                 ),
-                child: Row(
-                  children: [
-                    Column(
-                      children: [
-                        const Text('Euro',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 32,
-                            )),
-                        const SizedBox(
-                          height: 10,
-                        ),
-                        Row(
-                          children: const [
-                            Text('6428'),
-                            Text('EUR'),
-                          ],
-                        )
-                      ],
-                    )
-                  ],
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(
+                    vertical: 20,
+                    horizontal: 10,
+                  ),
+                  child: Row(
+                    children: [
+                      Column(
+                        children: [
+                          const Text('Euro',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 32,
+                              )),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          Row(
+                            children: const [
+                              Text('6428'),
+                              Text('EUR'),
+                            ],
+                          )
+                        ],
+                      )
+                    ],
+                  ),
                 ),
               ),
             ],
