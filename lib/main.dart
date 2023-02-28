@@ -114,10 +114,11 @@ class App extends StatelessWidget {
                   borderRadius: BorderRadius.circular(25),
                 ),
                 child: Padding(
-                  padding: const EdgeInsets.all(20),
+                  padding: const EdgeInsets.all(30),
                   child: Row(
                     children: [
                       Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           const Text('Euro',
                               style: TextStyle(
@@ -136,6 +137,9 @@ class App extends StatelessWidget {
                                   color: Colors.white,
                                   fontSize: 20,
                                 ),
+                              ),
+                              const SizedBox(
+                                width: 5,
                               ),
                               Text(
                                 'EUR',
