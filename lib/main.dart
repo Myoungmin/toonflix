@@ -157,7 +157,7 @@ class App extends StatelessWidget {
                       Transform.scale(
                         scale: 2.2,
                         child: Transform.translate(
-                          offset: const Offset(8, 15),
+                          offset: const Offset(-5, 12),
                           child: const Icon(
                             Icons.euro_rounded,
                             color: Colors.white,
