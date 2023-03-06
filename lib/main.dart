@@ -109,7 +109,12 @@ class App extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-              const CurrencyCard(),
+              const CurrencyCard(
+                name: 'Euro',
+                code: 'EUR',
+                amount: '6 428',
+                icon: Icons.euro_rounded,
+              ),
             ],
           ),
         ),
